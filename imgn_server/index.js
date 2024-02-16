@@ -15,7 +15,7 @@ app.use("/BOD", require('./routes/BOD.route'));
 app.use("/about", require('./routes/about.route'));
 
 connect().then(() => {
-    app.listen(8000, () => {
+    app.listen(process.env.PORT, () => {
         console.log("Server Done!");
     })
 })
