@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.main-imgn {
+  background-color: #161616;
+  background-image: url(/images/Background.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.skew-20 {
+  transform: skewX(20deg);
+}
+.skew--20 {
+  transform: skewX(-20deg);
+}
+.nav-container {
+  border-bottom: solid 3px #fff;
+}
+.swiper-pagination {
+  position: relative;
+  bottom: 0;
+  transform: translateY(100%);
+  z-index: 1000000;
+  background: #fff;
+}
+.carousel-image {
+  height: 100%;
+}
+.carousel-image .overlay {
+  filter: blur(2rem);
+  z-index: -1;
+}
+.carousel-image img {
+  height: 100%;
+}
+.nav-search {
+  background: #4e3261;
+  outline: none;
+}
+.dropdownNavbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+}
+.dropdown-items {
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  border-bottom: solid 1px #4e3261;
+}
+.dropdownNavbarLink:hover button {
+  color: #4e3261;
+}
+.main-imgn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.dir-rtl {
+  direction: rtl;
+}
+.nav-item-active {
+  background: #fff;
+  color: #4e3261!important;
+}
+.pagination > * {
+    opacity: .5;
+    cursor: pointer;
+}
+.pagination > *.active {
+    opacity: 1;
+}
+footer {
+  padding: 100px 0 50px!important;
+  background: url(/images/footer.png) no-repeat;
+  background-size: cover;
+}
+.footer-links:hover img {
+  filter: invert(1);
+}
+.login {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/images/Background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.login-container::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    height: calc(100% + 60px);
+    width: calc(100% + 60px);
+    border: solid 6px #fff;
+    border-radius: 20px;
+    z-index: -1;
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid black;
+}
+table tr:first-child td {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-right: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-left: 0;
+}
+table td {
+  padding: 20px;
+  text-align: center;
+  color: #511752;
+}
+table tr:first-child td {
+  @apply font-bold
+}
+/* .carousel-text > * {
+  transform: skew(20deg);
+} */
+
+.text-shadow {
+  text-shadow: 3px 3px #8a6f9c;
+}
+.item-carousel.react-multi-carousel-list {
+  display: flex;
+  justify-content: space-evenly;
+}
